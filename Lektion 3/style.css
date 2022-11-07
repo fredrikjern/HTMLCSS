@@ -1,0 +1,113 @@
+/* Definiera hur du skulle skriva följande CSS Selector:
+
+1. Alla div-taggar = */
+div{
+    background: black;
+}
+
+/*
+2. Första section-taggen inuti en article = */
+article section:first-child{
+    background: red;
+}
+article section:first-of-type{
+    background: green;
+}
+article section:nth-child(2){
+    color: red;
+}
+/*
+3. Alla li-taggar som inte har id “unique-list-element” = */
+li:not(#unique-list-element) {
+    background-color: aqua;
+}
+
+/*e
+4. Första span inuti en section = */
+section span:first-child{
+    color: blue;
+}
+/*
+
+5. Alla element inuti en aside-tagg = */
+aside *{
+    background: green;
+}
+
+/*
+6. Alla element inuti en div med id=”main-header” = */
+div#main-header{
+    color: rgb(7, 49, 85);
+    font-size: 30px;
+}
+
+/*
+7. Alla buttons = */
+button {
+    background-color: aliceblue;
+}
+/*
+
+8. Alla element med klassen “orange” = */
+.orange{
+    background-color: orange;
+}
+
+/*
+9. Alla element med id “box-id” = */
+#box-id{
+    background-color: aliceblue;
+}
+/*
+
+10. Alla span-taggar med klassen “startpage-large-fonts”= */
+span + #startpage-large-fonts{
+    background: gray;
+}
+/*
+
+11. Alla li-taggar med klassen “shop-item” inuti en div = */
+div li.shop-item {
+    background: pink !important; /* :not(id) har högre specificity, !important kräver företräde ändå*/
+    color: green;
+}
+/*
+12. Alla h2-taggar och alla h3-taggar = */
+h2,h3 {
+    color: yellow !important;
+}
+/*
+13. Alla h2-taggar med klassen “section-heading” inuti en span med id “article-3” =*/
+span#span3 h2.section-heading {
+    font-size: 28px;
+    background: gainsboro;
+}
+/*
+14. När du lägger musen på en a-tagg = */
+a{
+    color: cyan;
+}
+
+a:hover{
+    background: pink;
+    color: black;
+}
+/*
+15. Sista li-taggen inuti ul som har klassen “clothing-list” = */
+.clothing-list li:last-child{
+    background: green !important;
+}
+/*
+16. Alla checkboxar = 
+*/
+input[type="checkbox"]{
+    font-size: 30;
+}
+/*
+
+17. Alla radiobuttons med value=“all”  = */
+div input[type="radio"][value="all"]{
+    font-size: 20 !important;
+    color: pink !important;
+}
+/*

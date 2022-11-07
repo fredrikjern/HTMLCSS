@@ -1,0 +1,19 @@
+Definiera hur du skulle skriva följande CSS Selector:
+
+1. Alla div-taggar = 
+2. Första section-taggen inuti en article = 
+3. Alla li-taggar som inte har id “unique-list-element” = 
+4. Första span inuti en section = 
+5. Alla element inuti en aside-tagg = 
+6. Alla element inuti en div med id=”main-header” = 
+7. Alla buttons = 
+8. Alla element med klassen “orange” = 
+9. Alla element med id “box-id” = 
+10. Alla span-taggar med klassen “startpage-large-fonts”= 
+11. Alla li-taggar med klassen “shop-item” inuti en div = 
+12. Alla h2-taggar och alla h3-taggar =
+13. Alla h2-taggar med klassen “section-heading” inuti en span med id “article-3” =
+14. När du lägger musen på en a-tagg = 
+15. Sista li-taggen inuti ul som har klassen “clothing-list” = 
+16. Alla checkboxar = 
+17. Alla radiobuttons med value=“all”  =
