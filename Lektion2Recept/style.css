@@ -5,20 +5,21 @@
     --lightest: hsl(232, 37%, 66%);
     --body:  hsl(232, 1%, 76%);
     --width: 60%;
+    font-size: 17px;
   }
 html{
-    padding: 1px;
+    padding: 0px;
 }
-body{
+.body{
     background: var(--body);
     font-family: Helvetica, sans-serif, Verdana, sans-serif;
-    font-size: small;
+    font-size: 1rem;
     text-align: left;
     margin: 0px;
     padding: 1rem;
     border: 0px;
 }
-main{
+.main {
     width: var(--width);
     margin: auto;
     background: white;
@@ -28,22 +29,19 @@ nav {
     font-size: 1rem;
     width: var(--width);
     align-content: center;
-    margin: auto;
+    margin: 0rem auto 0rem auto;
     background-color: var(--dark);
     text-align: center;
     padding: 0rem 1rem 0rem 1rem;
-   
-
 }
 header {
     width: var(--width);
     align-content: center;
-    margin: auto;
+    margin: auto auto 0rem auto;
     background: hsl(232, 37%, 66%);
     font-size: 26px;
-    padding: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
     text-align: center;
-    
 }
 footer{
     background: white;
@@ -51,61 +49,39 @@ footer{
     text-align: right;
     margin: auto;
     padding: 1rem;
+    font-size: 0.75rem;
+    clear: both;
+    padding-top: 2em;
+    border-top: solid 1px #ccc;
 }
-body {
-padding: 0 1rem;
+article{
+    border: 1px solid;
 }
-h1 {
-margin-top: 0;
-}
-/* Modules will scale with document */
 .header {
-font-size: 1.5rem;
+font-size: 1rem;
 }
-.footer {
-font-size: 0.75rem;
-}
-.sidebar {
-font-size: 0.85rem;
-}
-
-/* Type will scale with modules */
-h1 {
-font-size: 3em;
-}
-h2 {
-font-size: 2.5em;
-}
-h3 {
-font-size: 2em;
+.img-anecdote {
+    display: flex;
+    border: 3px solid rgb(15, 10, 10);
+    padding: 0px;
+    margin: 0px
 }
 
-/* layout */
+#image {
+    flex: 1;
+    width: 50%;
+    margin-right: 10px;
+    padding: 0px;
+    border: 2px solid red;
+}  
+#anecdote {
+    width: 40%;
+    padding: 0px;
+    padding-left: 20px;
+    border: 2px solid red;
+} 
+p {margin: 0.2rem;}
 
-.content {
-float: left;
-width: 70%;
-}
-
-.sidebar {
-float: right;
-width: 25%;
-}
-
-.footer {
-clear: both;
-padding-top: 2em;
-border-top: solid 1px #ccc;
-}
-
-aside {
-    width: 45%;
-    float: right;
-    display: inline;
-    background: hsl(232, 37%, 66%);
-    margin: 20px;
-}
-p {margin: 1rem;}
 ul {
     list-style-type: none;
     margin: auto;
@@ -121,3 +97,8 @@ li a {
     text-decoration: none;
 }
 li a:hover {background-color: hsl(232, 84%, 81%);}
+
+h3{
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
+}
