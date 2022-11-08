@@ -40,16 +40,16 @@ body {
     min-width: 370px;
     max-width: 500px;
 }
-.recipeContainer {
+.recipeFlexContainer {
     position: relative;
     display: block;
     align-items: center;
     background: rgb(11, 11, 29);
     width: 96%;
-    height:100px;
+    height: auto;
     margin: 10px;
 }
-.recipeContainer:hover{
+.recipeFlexContainer:hover{ 
     opacity: 90%;
     transition: 0.2s;
 
@@ -60,27 +60,25 @@ body {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
+	align-items: flex-start;
+	align-content: center;
     width: 100%;
     height: 100%;
 }
-
-.recipeContainer .picture {
+.flexItem {
     display: inline-flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
+}
+
+.recipeFlexContainer .flexItem .picture {
+    order: 1;
     background: rgb(28, 13, 59);
-    height: 100px;
-    width: 30%;
+    max-height:100%;
     min-width: 100px;
+    
    
 }
-.recipeContainer .info {
-    display: inline-block;
+.recipeFlexContainer .info .flexItem {
+    display: inline-flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -90,8 +88,8 @@ body {
     height: 100px;
     width: 30%;
     min-width: 100px;
-    padding: 5px;
     overflow-y: hidden;
+    margin: 4px;
 }
 #recCon .recipeContainer.auto {
     transition: 0.3s;
@@ -104,6 +102,7 @@ body {
     font-size: 30px;
     opacity: 50%;
 }
+
 #rectest:hover {
     background: gray;
 }
