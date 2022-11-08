@@ -1,0 +1,109 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+    color: aliceblue;
+  }
+body {
+    background: red;
+}
+.upperContainer {
+    background: blue;
+    width: 100%;
+    height: 20%;
+    min-width: 800px;
+}
+.middleContainer {
+    background: rgb(183, 183, 246);
+    width: 100%;
+    height: 60%;
+
+}
+.lowerContainer {
+    position: absolute;
+    bottom: 0px;
+    background: rgb(26, 26, 55);
+    width: 100%;
+    height: 20%;
+}
+.contentContainer {
+    position: relative;
+    align-items: center;
+    background: rgb(38, 225, 157);
+    width: 80%;
+    height:100%;
+    margin: auto;
+    overflow-y: auto;
+    min-width: 370px;
+    max-width: 500px;
+}
+.recipeContainer {
+    position: relative;
+    display: block;
+    align-items: center;
+    background: rgb(11, 11, 29);
+    width: 96%;
+    height:100px;
+    margin: 10px;
+}
+.recipeContainer:hover{
+    opacity: 90%;
+    transition: 0.2s;
+
+}
+.test{
+
+    display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.recipeContainer .picture {
+    display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+    background: rgb(28, 13, 59);
+    height: 100px;
+    width: 30%;
+    min-width: 100px;
+   
+}
+.recipeContainer .info {
+    display: inline-block;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+    background: rgb(33, 31, 61);
+    height: 100px;
+    width: 30%;
+    min-width: 100px;
+    
+
+}
+#recCon .recipeContainer.auto {
+    transition: 0.3s;
+    height: auto;
+}
+#rectest {
+    margin: 0px;
+    background: red;
+    width: 100px;
+    font-size: 30px;
+    opacity: 50%;
+}
+#rectest:hover {
+    background: gray;
+}
