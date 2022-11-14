@@ -3,7 +3,7 @@ var context;
 
 window.onload = function() {
    canvas = document.getElementById('canvas');
-   context = canvas.getContext('2d');
+   context = canvas.getContext('2d'); 
    canvas.width = 780;
    canvas.height = 490;
    context.strokeStyle = "#100";
