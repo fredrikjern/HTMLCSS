@@ -1,0 +1,199 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background: gray;
+    width: 80%;
+    height: 150px;
+    margin-bottom: 20px;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    background: gray;
+    height: 600px ;
+    width: 70%;
+    
+}
+
+.flexOne {
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+    height: 600px;
+    gap:20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.flexTwo {
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    height: 600px;
+    gap:20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.blue {
+    background: blue;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.red {
+    background: rgb(255, 1, 1);
+    width: 95%;
+    height: 93,5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    align-content: flex-start;
+}
+.purple {
+    background: rgb(175, 1, 255);
+    width: 1px;
+    min-width: 1px;
+    height: 60px;
+    margin: 10px 0px 10px 10px;
+    flex-grow: 1;
+}
+.aqua {
+    background: rgb(19, 212, 230);
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px;
+}
+.blue .pink {
+    background: pink;
+    width: 40px;
+    height: 40px;
+}
+.blue:last-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.yellow {
+    background: rgb(255, 225, 1);
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    align-self: flex-start;
+}
+.yellow:last-child {   
+    align-self: flex-end;
+    
+}
+.redTwo {
+    background: rgb(255, 1, 1);
+    width: 90%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;    
+}
+.redTwo:last-child {
+    background: rgb(255, 1, 1);
+    width: 90%;
+    height: 45%;
+    display: flex;
+    position:relative; 
+    align-items: center;
+    justify-content: center;
+ 
+}
+.grey {
+    background: rgb(130, 130, 130);
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    
+}
+.navie {
+    background: rgb(39, 11, 105);
+    position: absolute;
+    top: 50%;
+    right: 28%;
+    width: 80px;
+    height: 80px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    height: 600px; 
+    width: 30%;
+    
+}
+
+.flex{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    height: 20%;
+    gap: 10px;
+}
+
+.secondFlex{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+width: 80%;
+height: 50%;
+margin: 10px 0px;
+}
+
+.green {
+    background: green;
+    width: 100%;
+    height: 70px;
+
+}
+.greenStanding {
+    background: green;
+    width: 65px;
+    height: 100%;
+    
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+/* .red div:nth-of-type(1) {
+    order: 1;
+}
+.red div:nth-of-type(2) {
+    order: 1;
+}
+.red div:nth-of-type(3) {
+    order: 2;
+}
+.red div:nth-of-type(4) {
+    order: 2;
+}
+.red div:nth-of-type(5) {
+    order: 3;
+}
+.red div:nth-of-type(6) {
+    order: 3;
+}
+.red div:nth-of-type(7) {
+    order: 4;
+}
+.red div:nth-of-type(8) {
+    order: 4;
+}
+.red div:nth-of-type(9) {
+    order: 5;
+}
+.red div:nth-of-type(10) {
+    order: 5;
+} */

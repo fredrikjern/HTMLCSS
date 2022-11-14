@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let recipeCon = document.getElementById("recipeCont");
 let recipeCon2 = document.getElementById("recipeCont2");
 let picture = document.getElementById("picture");
@@ -56,3 +57,10 @@ recipeCon2.addEventListener("click", () => {
 
 
     
+=======
+let recept = document.getElementById("recCon");
+recept.addEventListener("",()=>{
+    recept.classList.add("auto");
+    console.log("hej" );
+});
+>>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4

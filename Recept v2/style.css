@@ -145,6 +145,7 @@ li.navbar {
         max-height: 150px ;
     }
 }
+<<<<<<< HEAD
 .recipeContainer {
     background: rgb(48, 48, 66);
     width: 95%;
@@ -161,22 +162,40 @@ li.navbar {
     height: 90%;
     border-bottom: 4px solid black;
     overflow: auto;
+=======
+.recipeFlexContainer {
+    position: relative;
+    display: block;
+    align-items: center;
+    background: rgb(11, 11, 29);
+    width: 96%;
+    height: auto;
+    margin: 10px;
+>>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4
 }
-.recipeContainer:hover{
+.recipeFlexContainer:hover{ 
     opacity: 90%;
     transition: 0.2s;
 }
 .flex-container {
     display: inline-flex;
 	flex-direction: row;
+<<<<<<< HEAD
 	flex-wrap: wrap;
     align-items: stretch;
 	justify-content: space-evenly;
     margin: 5px;
     gap: 5px;
+=======
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: center;
+>>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4
     width: 100%;
     height: auto;
 }
+<<<<<<< HEAD
 .recipeContainer .flex-container .picture-container {
     background: rgb(77, 255, 0);
     max-height: 400px;
@@ -223,6 +242,33 @@ li.navbar {
     height: auto;
     width: 40%;
     padding: 5px;
+=======
+.flexItem {
+    display: inline-flex;
+}
+
+.recipeFlexContainer .flexItem .picture {
+    order: 1;
+    background: rgb(28, 13, 59);
+    max-height:100%;
+    min-width: 100px;
+    
+   
+}
+.recipeFlexContainer .info .flexItem {
+    display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+    background: rgb(33, 31, 61);
+    height: 100px;
+    width: 30%;
+    min-width: 100px;
+    overflow-y: hidden;
+    margin: 4px;
+>>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4
 }
 .recipeContainer .flex-container .todo {
     order: 2;
@@ -261,6 +307,7 @@ li.navbar {
     transition: 0.5s ease-in-out 0s;
     height: var(--barheight);
 }
+<<<<<<< HEAD
 footer {
     background: rgb(93, 66, 66);
     text-align: right;
@@ -274,4 +321,9 @@ footer {
 
 .grow {
     flex-grow: 1;
+=======
+
+#rectest:hover {
+    background: gray;
+>>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4
 }
