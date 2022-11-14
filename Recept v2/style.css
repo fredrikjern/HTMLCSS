@@ -145,7 +145,6 @@ li.navbar {
         max-height: 150px ;
     }
 }
-<<<<<<< HEAD
 .recipeContainer {
     background: rgb(48, 48, 66);
     width: 95%;
@@ -162,7 +161,7 @@ li.navbar {
     height: 90%;
     border-bottom: 4px solid black;
     overflow: auto;
-=======
+}
 .recipeFlexContainer {
     position: relative;
     display: block;
@@ -171,7 +170,6 @@ li.navbar {
     width: 96%;
     height: auto;
     margin: 10px;
->>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4
 }
 .recipeFlexContainer:hover{ 
     opacity: 90%;
@@ -180,22 +178,14 @@ li.navbar {
 .flex-container {
     display: inline-flex;
 	flex-direction: row;
-<<<<<<< HEAD
 	flex-wrap: wrap;
     align-items: stretch;
 	justify-content: space-evenly;
     margin: 5px;
     gap: 5px;
-=======
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: center;
->>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4
     width: 100%;
     height: auto;
 }
-<<<<<<< HEAD
 .recipeContainer .flex-container .picture-container {
     background: rgb(77, 255, 0);
     max-height: 400px;
@@ -242,8 +232,8 @@ li.navbar {
     height: auto;
     width: 40%;
     padding: 5px;
-=======
-.flexItem {
+}
+    .flexItem {
     display: inline-flex;
 }
 
@@ -268,7 +258,6 @@ li.navbar {
     min-width: 100px;
     overflow-y: hidden;
     margin: 4px;
->>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4
 }
 .recipeContainer .flex-container .todo {
     order: 2;
@@ -307,7 +296,6 @@ li.navbar {
     transition: 0.5s ease-in-out 0s;
     height: var(--barheight);
 }
-<<<<<<< HEAD
 footer {
     background: rgb(93, 66, 66);
     text-align: right;
@@ -321,9 +309,5 @@ footer {
 
 .grow {
     flex-grow: 1;
-=======
 
-#rectest:hover {
-    background: gray;
->>>>>>> 7f40654f93f2ff8b2fd1af29c41dbb38cf1d0dd4
 }
