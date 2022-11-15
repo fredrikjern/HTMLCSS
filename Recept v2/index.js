@@ -15,17 +15,15 @@ function heightChange() {
         read = false;
   }
 }
-justFeedMe.addEventListener("click", () => {
-        
-        
-        if (rotatingP.classList.contains("rotate")) { 
-                rotatingP.classList.remove("rotate");
-                console.log("nu klicka du REMOVE");
-        } else {
-                    rotatingP.classList.add("rotate");  
-                    console.log("nu klicka du ADD rotate");       
-        }
-})
+// justFeedMe.addEventListener("click", () => {
+//         if (rotatingP.classList.contains("rotate")) { 
+//                 rotatingP.classList.remove("rotate");
+//                 console.log("nu klicka du REMOVE");
+//         } else {
+//                     rotatingP.classList.add("rotate");  
+//                     console.log("nu klicka du ADD rotate");       
+//         }
+// })
 recipeCon.addEventListener("click", () => {
         heightChange();
     if (recipeCon.classList.contains("auto")) {  // Om receptcontainer har klassen auto, ta bort den, annars lägg till den.
@@ -36,7 +34,7 @@ recipeCon.addEventListener("click", () => {
             recipeCon.classList.add("auto");
             recipeCon2.classList.remove("auto");
 
-        picture.classList.remove("zoomed")
+        //picture.classList.remove("zoomed")
                
     }
     });

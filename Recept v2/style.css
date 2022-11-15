@@ -233,31 +233,14 @@ li.navbar {
     width: 40%;
     padding: 5px;
 }
-    .flexItem {
+.flexItem {
     display: inline-flex;
 }
-
 .recipeFlexContainer .flexItem .picture {
     order: 1;
     background: rgb(28, 13, 59);
     max-height:100%;
     min-width: 100px;
-    
-   
-}
-.recipeFlexContainer .info .flexItem {
-    display: inline-flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
-    background: rgb(33, 31, 61);
-    height: 100px;
-    width: 30%;
-    min-width: 100px;
-    overflow-y: hidden;
-    margin: 4px;
 }
 .recipeContainer .flex-container .todo {
     order: 2;
