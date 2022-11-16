@@ -1,52 +1,53 @@
 
-/* cmd+shift+4  sen escape för att mäta i chrome */
 body {
-    background: linear-gradient(black, red);
+    background: linear-gradient(black,hsl(7,98%,56%));
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
 }
-.container {
+.container { 
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 250px;
+    width: 754px;
+    height: 282px;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
 }
 .inlogg {
     display: flex;
     color: aliceblue;
-    height: 50px;
-    width: 200px;
+    height: 28px;
+    width: 284px;
     align-items: center;
     justify-content: center;
+
+}
+.inlogg h1 {
+    font-size: 27px;
 }
 main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 200px;
+    height: 284px;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(60, 8, 137);
 }
 .inputs {
     color: aliceblue;
-    height: 100%;
-    width: 200px;
+    height: 150px;
+    width: 284px;
     justify-self: center;
     align-self: center;
+    border: 1px solid rgb(49, 234, 7);
 
 }
-.pass{
-    width: 200px;
-    margin-top: 10px;
-}
+
 input[type="username"] { 
-    width: 100%;
+    width: 238px;
     padding:  4px 20px; 
     margin: 0px 0px; 
     
@@ -55,56 +56,66 @@ input[type="username"] {
     position: absolute;
     left: 3px;
     top: 3px;
-    color: gray;
+    color: rgb(188, 188, 188);
+}
+
+.user{
+    width: 284px;
+    position: relative;
+    
+}
+.pass{
+    width: 280px;
+    margin-top: 10px;
 }
 input[type="password"]{
-    width: 200px;
+    border-radius: 3px;
+    width: 276px;
 }
-.user{
-    width: 200px;
-    position: relative;
+.checkandforget{
+    display: flex;
+    flex-direction: row;
+    height: 34px;
+    width: 283px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.remember-me {
+    font-size: 10px;
+}
+.forgot {
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+a:hover {
+    color: aquamarine;
 }
 .or {
     color: aliceblue;
-    height: 100%;
-    width: 30%;
+    height: 150px;
+    width: 184px;
     display: flex;
+    border: 1px solid rgb(255, 255, 255);
+}
+.or h2 {
+    margin: auto;
+    align-self: center;
+    font-size: 15px;
 }
 .buttons {
     display: flex;
     flex-direction: column;
     color: rgb(255, 255, 255);
-    height: 100%;
-    width: 200px;
+    height: 150px;
+    width: 284px;
     align-items: center;
     justify-content: center;
-}
-.checkandforget{
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    width: 200px;
-
-    align-items: center;
-    justify-content: space-between;
-}
-.remember-me {
-    font-size: 12px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    transform: translateY(1.9px);
-    
-}
-a:hover {
-    color: aquamarine;
-}
-.or h2 {
-    margin: auto;
-    align-self: center;
+    border: 1px solid aquamarine;
 }
 .facebook {
     margin-top: 10px;
@@ -130,8 +141,32 @@ a:hover {
     padding: 4px;
     text-align: center;
 }
-
 .remember-me input[type="checkbox"] {
     transform: translateY(1.9px);
+}
+footer {
+    background: hsl(0,3%,31%);
+    width: 100%;
+    position: fixed;
+    bottom:0%;
+    left: 0%;
+    
+    color: aliceblue;
+    font-size: 10px;
+}
+p.footer-p {
+    margin-left: 38px;
+}
+@media (max-width :800px) {
+    main {
+        flex-direction: column;
+        height: 350px;
+    }
+    .container {
+        height: auto;
+    }
+    .or {
+        height: 40px;
+    }
 }
 
