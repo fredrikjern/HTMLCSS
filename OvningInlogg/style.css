@@ -11,9 +11,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 754px;
-    height: 282px;
+    height: auto;
     justify-content: center;
     align-items: center;
+    border: 1px solid white;
 }
 .inlogg {
     display: flex;
@@ -22,6 +23,8 @@ body {
     width: 284px;
     align-items: center;
     justify-content: center;
+    border: 1px solid white;
+    margin: 95px;
 
 }
 .inlogg h1 {
@@ -31,10 +34,10 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 284px;
+    height: 150px;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(60, 8, 137);
+    border: 1px solid white;
 }
 .inputs {
     color: aliceblue;
@@ -42,35 +45,38 @@ main {
     width: 284px;
     justify-self: center;
     align-self: center;
-    border: 1px solid rgb(49, 234, 7);
-
 }
-
-input[type="username"] { 
-    width: 238px;
-    padding:  4px 20px; 
-    margin: 0px 0px; 
-    
-} 
-.user i {
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    color: rgb(188, 188, 188);
-}
-
 .user{
     width: 284px;
     position: relative;
     
 }
 .pass{
-    width: 280px;
+    position: relative;
+    width: 284px;
     margin-top: 10px;
 }
+input[type="username"] { 
+    width: 230px;
+    margin: 0px 0px;  
+    padding:  3px 24px; 
+} 
 input[type="password"]{
     border-radius: 3px;
-    width: 276px;
+    width: 230px;
+    padding:  3px 24px;    
+}
+.user i {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    color: rgb(188, 188, 188);
+}
+.pass i {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    color: rgb(188, 188, 188);
 }
 .checkandforget{
     display: flex;
@@ -84,8 +90,8 @@ input[type="password"]{
 .remember-me {
     font-size: 10px;
 }
-.forgot {
-    
+.remember-me input[type="checkbox"] {
+    transform: translateY(2.5px);
 }
 a {
     text-decoration: none;
@@ -95,12 +101,20 @@ a {
 a:hover {
     color: aquamarine;
 }
+.login-button {
+    margin-top: 10px;
+    color: rgb(254, 249, 249);
+    background: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 4px;
+    text-align: center;
+}
+
 .or {
     color: aliceblue;
     height: 150px;
     width: 184px;
     display: flex;
-    border: 1px solid rgb(255, 255, 255);
 }
 .or h2 {
     margin: auto;
@@ -115,9 +129,9 @@ a:hover {
     width: 284px;
     align-items: center;
     justify-content: center;
-    border: 1px solid aquamarine;
 }
 .facebook {
+    width: 280px;
     margin-top: 10px;
     color: rgb(251, 249, 249);
     background: hsl(216,77%,60%);
@@ -126,6 +140,7 @@ a:hover {
     text-align: center;
 }
 .google {
+    width: 280px;
     margin-top: 10px;
     color: black;
     background: aliceblue;
@@ -133,17 +148,7 @@ a:hover {
     padding: 4px;
     text-align: center;
 }
-.login-button {
-    margin-top: 10px;
-    color: rgb(254, 249, 249);
-    background: rgb(0, 0, 0);
-    border-radius: 3px;
-    padding: 4px;
-    text-align: center;
-}
-.remember-me input[type="checkbox"] {
-    transform: translateY(1.9px);
-}
+
 footer {
     background: hsl(0,3%,31%);
     width: 100%;
@@ -161,12 +166,19 @@ p.footer-p {
     main {
         flex-direction: column;
         height: 350px;
+        justify-content: flex-start;
     }
     .container {
         height: auto;
     }
     .or {
         height: 40px;
+    }
+    .inlogg {
+        margin: 10px;
+    }
+    .buttons {
+        height: auto;
     }
 }
 
