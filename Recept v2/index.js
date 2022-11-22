@@ -5,7 +5,7 @@ var root = document.querySelector(':root');
 let rotatingP = document.getElementById("rotatingP")
 let justFeedMe = document.getElementById("jFM")
 let read = false;
-console.log("hej");
+console.log("hehj");
 function heightChange() {
   if (read === false) {
         root.style.setProperty('--barheight', '10%')
@@ -30,7 +30,7 @@ recipeCon.addEventListener("click", () => {
     if (recipeCon.classList.contains("auto")) {  // Om receptcontainer har klassen auto, ta bort den, annars lägg till den.
         recipeCon.classList.remove("auto");
         picture.classList.add("zoomed");
-        console.log("hej");
+        console.log("hezj");
         
     } else {
             recipeCon.classList.add("auto");
