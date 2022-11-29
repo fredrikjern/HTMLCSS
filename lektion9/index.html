@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
+    <script  defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+        
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li>
+                        <a href="#">Parent</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+        
+            </div>
+        </nav>
+        <div class="uk-container">
+            <h1 class="uk-align-center">Lathund för</h1>
+        
+            <hr class='uk-divider-large'>
+            <hr class='uk-divider-icon'>
+            <hr class='uk-divider-large'>
+        </div>
+        <ul uk-tab class="uk-tab-bottom">
+            <li class="uk-active"><a href="">Tab 1</a></li>
+            <li><a href="">Tab 2</a></li>
+            <li class="uk-disabled"><a href="">Tab 3</a></li>
+        </ul>
+    </header>
+    
+
+    <div class="uk-section uk-section-primary">
+        <div class="uk-container">
+            <h1>Primary Section..</h1>
+        </div>
+    </div>
+    <div class="uk-container uk-container-small" style='background:yellow;'>
+        <h2>Small Container</h2>
+    </div>
+    
+    <div class="uk-container uk-container-large" style='background:gray;'>
+        <h2>Large Container</h2>
+    </div>
+    
+    <div class="uk-container uk-container-expand" style='background:skyblue;'>
+        <h2>Expand Container</h2>
+    </div>
+    <div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item<br></div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item Line 1<br>Line 2<br>Line 3</div>
+        </div>
+    </div>
+    <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+        <div>Dummy Text., Dummy TextDummy TextDummy TextDummy TextDummy TextDummy TextDummy Text</div>
+        <div>Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text.</div>
+        <div>Dummy TextDummy TextDummy TextDummy TextDummy TextDummy TextDummy TextDummy TextDummy Text.</div>
+    </div>
+    <div uk-grid>
+        <div class="uk-width-auto@m">a</div>
+        <div class="uk-width-1-3@m">b</div>
+        <div class="uk-width-expand@m">c</div>
+    </div>
+    <ul uk-accordion>
+        <li>
+            <h3 class="uk-accordion-title">Item 1</h3>
+            <div class="uk-accordion-content">Content 1 description.. </div>
+        </li>
+        <li>
+            <h3 class="uk-accordion-title">Item 2</h3>
+            <div class="uk-accordion-content">Content 2 description.. </div>
+        </li>
+        <li>
+            <h3 class="uk-accordion-title">Item 3</h3>
+            <div class="uk-accordion-content">Content 3 description.. </div>
+        </li>
+        <li>
+            <h3 class="uk-accordion-title">Item 4</h3>
+            <div class="uk-accordion-content">Content 4 description.. </div>
+        </li>
+    </ul>
+    <ul uk-accordion="multiple: true">
+        <li>
+            <h3 class="uk-accordion-title">Item 1</h3>
+            <div class="uk-accordion-content">
+                <p> Description Content 1.</p>
+            </div>
+        </li>
+        <li>
+        <li>
+            <h3 class="uk-accordion-title">Item 2</h3>
+            <div class="uk-accordion-content">
+                <p> Description Content 2.</p>
+            </div>
+        </li>
+        <li>
+            <h3 class="uk-accordion-title">Item 3</h3>
+            <div class="uk-accordion-content">
+                <p> Description Content 3.</p>
+            </div>
+        </li>
+    </ul>
+    <button class="uk-button uk-button-default">My Button</button>
+    <button class="uk-button uk-button-default">Default Button</button>
+    <button class="uk-button uk-button-primary">Primary Button</button>
+    <button class="uk-button uk-button-secondary">Secondary Button</button>
+    <button class="uk-button uk-button-danger">Danger Button</button>
+    <button class="uk-button uk-button-text">Text Button</button>
+    <button class="uk-button uk-button-link">Link Button</button>
+    <ul class="uk-breadcrumb">
+        <li><a href="">Item 1</a></li>
+        <li><a href="">Item 2</a></li>
+        <li><span href="">Active Item</span></li>
+    </ul>
+    <div uk-spinner></div><br>
+    <a href="#" uk-totop uk-scroll>Go to Top </a>
+    <div class="uk-tile uk-tile-muted">
+        <p class="uk-h4">Default Tile, men </p>
+    </div>
+    <div class="uk-tile uk-tile-secondary" >
+        <p class="uk-h4">Default Tile</p>
+    </div>
+    <button class="demo uk-button uk-button-default" type="button"
+        onclick="UIkit.notification({message: 'WaaazzzzzzzzZuup?!'})">Zup?</button>'
+        
+
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Default</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <h3 class="uk-card-title">Primary</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <h3 class="uk-card-title">Secondary</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div style="width:100px;background:yellow;" class="uk-align-left">Align Left</div>
+    <br>
+    <div style="width:100px;background:yellow;" class="uk-align-right">Align Right</div>
+    <br>
+    <div style="width:100px;background:yellow;" class="uk-align-center">Align Center</div>
+    
+    <div class="uk-animation-toggle" tabindex="0">
+        <img class="uk-animation-stroke uk-svg" src="./images/hej.svg" width="400" height="400" alt=""
+        uk-svg="stroke-animation: true">
+    </div>
+            <svg width="400" height="400" viewBox="0 0 350 340" xmlns="http://www.w3.org/2000/svg"
+                class="uk-animation-stroke uk-svg" style="--uk-animation-stroke: 46;">
+                <polygon points="142.6 273.5 92.4 273.5 64 322 171 322 142.6 273.5" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"></polygon>
+                <rect x="102" y="263" width="31" height="10" fill="none" stroke="#000" stroke-width="2"></rect>
+                <rect x="41" y="248" width="102" height="15" fill="none" stroke="#000" stroke-width="2"></rect>
+                <polyline points="186.8 200.4 277.9 25.7 296.8 12.3" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <polyline points="89.1 190.6 257 1.5 296.8 12.3 336.9 89" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <circle cx="338.4" cy="94.8" r="5.3" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2"></circle>
+                <line x1="338.4" y1="207.4" x2="338.4" y2="100.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"></line>
+                <path d="M332.5,228.4a8,8,0,0,0-.5,2.1,6.77,6.77,0,1,0,8.2-6.1,2.36,2.36,0,0,1-1.8-2.3h0v-5.2" fill="none"
+                    stroke="#0045d4" stroke-linecap="round" stroke-width="2"></path>
+                <circle cx="338.5" cy="212.7" r="4.2" fill="none" stroke="#0045d4" stroke-width="2"></circle>
+                <rect x="3" y="191" width="140" height="57" fill="none" stroke="#000" stroke-width="2"></rect>
+                <polygon points="193 201 193 242 179 263 143 263 143 197 193 201" fill="none" stroke="#000" stroke-width="2">
+                </polygon>
+                <polygon points="185 243 175 258 160 258 160 243 185 243" fill="none" stroke="#0045d4" stroke-width="2"></polygon>
+                <rect x="160" y="209" width="26" height="28" fill="none" stroke="#0045d4" stroke-width="2"></rect>
+                <polyline points="220.2 135.2 139.8 135.2 170.8 199.1" fill="none" stroke="#000" stroke-width="2"></polyline>
+                <rect x="57" y="322" width="120" height="17" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2">
+                </rect>
+                <line x1="257" y1="1.5" x2="334" y2="90.7" fill="none" stroke="#000" stroke-width="2"></line>
+            </svg>
+
+
+    
+</body>
+</html>
