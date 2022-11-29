@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit-icons.min.js"></script>
+
+</head>
+<body>
+    <div class="uk-container uk-container-center uk-margin-top uk-marigin-large-bottom">
+        <!-- Header -->
+        <div class="uk-navbar-container" uk-sticky="show-on-up: true">
+            <nav class="uk-navbar-container uk-margin" uk-navbar>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-center-left">
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="#">Gridz</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Gridz</a></li>
+                                        <li><a href="#">Grid 1</a></li>
+                                        <li><a href="#">Grid 2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="uk-navbar-item uk-logo" href="../index.html">UI Kit</a>
+                    <div class="uk-navbar-center-right">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Tutorial</a></li>
+                        </ul>
+                    </div>
+            
+                </div>
+            </nav>
+        </div>
+        <!-- !!!!!!!! Content !!!!!!!!-->
+        <div class="uk-flex-center" uk-grid>
+            <!-- 3/4-boxen -->
+            <div class="uk-width-3-4">
+                <!-- Heading  -->
+                <h1 class="uk-heading-medium">Tutorial</h1>
+                <p class="uk-text-meta	">Att börja med UI-Kit är enkelt, att åstakomma något är ack så mycket svårare.</p>
+                <!-- Kom igång -->
+                <div class="uk-container uk-section uk-background-muted uk-scrollspy-nav" id="komIgang" >
+                    <h2 class="uk-heading-small">Kom igång snabbt!</h2>
+                    <p class="uk-text-meta">Snabbaste sättet att komma igång med UIkit är att lägga till följande i HTML-filen:
+                    </p>
+                    <pre><code>
+                        &lt;!-- UIkit CSS --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/css/uikit.min.css" /&gt;
+
+&lt;!-- UIkit JS --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit-icons.min.js"&gt;&lt;/script&gt;
+                    </code></pre>
+                    <p class="uk-text-meta"> Glöm inte att lägga till defer i script-taggen om du lägger den i headern!
+                    </p>
+                </div>
+                <!--  -->
+                <!-- Buttons -->
+                <div class="uk-container uk-section" id="buttons">
+                    <h2>Knappar</h2>
+                    <p>Här är dom vanliga knapparna!</p>
+                    <p>Dom ges button-klasser tex <br>
+                        <code>"uk-button uk-button-default"</code>
+                    </p>
+                    <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+                        <li><a href="#">Exempel</a></li>
+                        <li><a href="#">Kod</a></li>
+                    </ul>
+                    <ul class="uk-switcher uk-margin">
+                        <li><p><p uk-margin>
+                            <button class="uk-button uk-button-default">Default</button>
+                            <button class="uk-button uk-button-primary">Primary</button>
+                            <button class="uk-button uk-button-secondary">Secondary</button>
+                            <button class="uk-button uk-button-danger">Danger</button>
+                            <button class="uk-button uk-button-text">Text</button>
+                            <button class="uk-button uk-button-link">Link</button>
+                        </p></p>
+                        </li>
+                        <li><pre>
+                            <code>
+                               
+    &lt;button class="uk-button uk-button-default"&gt;Default&lt;/button&gt;
+    &lt;button class="uk-button uk-button-primary"&gt;Primary&lt;/button&gt;
+    &lt;button class="uk-button uk-button-secondary"&gt;Secondary&lt;/button&gt;
+    &lt;button class="uk-button uk-button-danger"&gt;Danger&lt;/button&gt;
+    &lt;button class="uk-button uk-button-text"&gt;Text&lt;/button&gt;
+    &lt;button class="uk-button uk-button-link"&gt;Link&lt;/button&gt;
+
+                            </code>
+                        </pre>
+                
+                        </li>
+                    </ul>
+                </div>
+                <!-- Modal (popup) -->
+                <div class=" uk-section uk-background-muted" id="modalOne">
+                    <h2> Modal</h2>
+                    <a class="uk-button uk-button-default" href="#modal-overflow" uk-toggle>Prova en popup! </a>
+                    <div id="modal-overflow" uk-modal>
+                        <div class="uk-modal-dialog">
+                    
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                    
+                            <div class="uk-modal-header">
+                                <h2 class="uk-modal-title">Gillar du popups?</h2>
+                            </div>
+                    
+                            <div class="uk-modal-body" uk-overflow-auto>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                            </div>
+                    
+                            <div class="uk-modal-footer uk-text-right">
+                                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                <button class="uk-button uk-button-primary" type="button">Save</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Kod-visare-kod -->
+                <div id="kodVisare" class="uk-container uk-section">
+                    <h2>Kod-visare</h2>
+                    <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+                        <li><a href="#">Exempel</a></li>
+                        <li><a href="#">Kod</a></li>
+                    </ul>
+                    <ul class="uk-switcher uk-margin">
+                        <li>Här kan du se koden för att se koden!
+                        </li>
+                        <li>
+                            <pre><code>
+                                
+<p>                &lt;div class="uk-container"&gt;
+    &lt;ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Kod&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="uk-switcher uk-margin"&gt;
+        &lt;li&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem.
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;code&gt;
+            Langa lite kod!
+            &lt;/code&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</p>
+                            </code></pre>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Animationskort -->
+                <div class="uk-container uk-section" id="flygandeKort">
+                    <div  class="uk-child-width-1-1@m uk-margin-xlarge-bottom uk-grid uk-grid-stack uk-background-muted" uk-grid="" uk-scrollspy="cls: uk-animation-scale-up; target: .uk-card; delay: 300; repeat: true">
+                    <h2>Flygande kort!</h2>
+                    <p>Här kommer lite flygande kort!</p>
+                    <div class="uk-first-column">
+                        <div class="uk-card uk-card-body uk-scrollspy-inview" >
+                            <h3 class="uk-card-title">Wow!</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                        <div class="uk-card uk-card-body uk-scrollspy-inview">
+                            <h3 class="uk-card-title"> Vilken</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                        <div class="uk-card uk-card-body " style="opacity: 0;">
+                            <h3 class="uk-card-title">Grej</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                        <div class="uk-card uk-card-body " style="opacity: 0;">
+                            <h3 class="uk-card-title">!</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="uk-grid-margin uk-first-column">
+                        <div class="uk-card uk-card-body" style="opacity: 0;">
+                            <h3 class="uk-card-title">Scale Up</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- !!!!!!! Sidebar !!!!!!!!!-->
+            <div class="uk-width-1-4 uk-visible@s" >
+            <div class="uk-card uk-card-body uk-position-fixed uk-overflow-auto uk-align-right">
+                <h3 class="uk-card-title">Scrollspy Nav</h3>
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true">
+                    <li class="uk-active"><a href="#tutorial">Tutorial</a></li>
+                    <li class=""><a href="#komIgang">Kom igång!</a></li>
+                    <li class=""><a href="#buttons">Knappar</a></li>
+                    <li class=""><a href="#modalOne">Modal</a></li>
+                    <li class=""><a href="#kodVisare">Kod-visare</a></li>
+                    <li class=""><a href="#flygandeKort">Flygande kort!</a></li>
+                    <li class=""><a href="#animation-slide-right">Slide Right</a></li>
+                    <li class=""><a href="#animation-slide-top">Slide Top</a></li>
+                    <li class=""><a href="#animation-slide-bottom">Slide Bottom</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        </div>
+        <!-- Footer  !!!-->
+        <footer>
+            <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid>
+                <div>
+                    <div class="uk-background-muted uk-padding"><button class="demo uk-button uk-button-default" type="button" onclick="UIkit.notification({message: 'wazzzuup?'})">zzZup?</button></div>
+                </div>
+                <div>
+                    <div class="uk-background-primary uk-padding uk-light"><p><a href="#" uk-totop uk-scroll></a><br> Rulla upp! <br></p></div>
+                </div>
+                <div>
+                    <div class="uk-background-secondary uk-padding uk-light"><p>
+                        <a href="#" uk-icon="icon: facebook">Facebook</a>
+                        <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-outside">Kolla koden</button>
+                        <div id="modal-close-outside" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Outside</h2>
+                                <p>
+                                    <code>&lt;a href="#" uk-icon="icon: facebook">Facebook &lt;/a></code>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        
+                    </p></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
