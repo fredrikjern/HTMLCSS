@@ -1,0 +1,48 @@
+body h1 {
+  color: red;
+}
+body #ghostId {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  list-style: none;
+  margin: 0;
+  width: 10px;
+  transition: 1s ease-in-out;
+  color: red;
+  opacity: 80%;
+}
+body #ghostId.flyg {
+  position: relative;
+  top: 20%;
+  right: 20%;
+  transition: 1s ease-in-out;
+  color: red;
+}
+body .containerAll {
+  position: relative;
+  height: 500px;
+  width: 600px;
+  border: 3px solid black;
+}
+body .ghostContainer {
+  position: absolute;
+  height: 480px;
+  width: 590px;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+  border: 3px solid khaki;
+}
+body .mapContainer {
+  position: relative !important;
+  top: 0%;
+  left: 0%;
+}
+body .btncontainer {
+  position: relative;
+  margin: 5px;
+  height: 30px;
+  background: rgb(34, 0, 255);
+  border: 1px solid green;
+}/*# sourceMappingURL=sass.css.map */
