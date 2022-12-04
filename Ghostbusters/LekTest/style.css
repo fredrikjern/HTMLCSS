@@ -1,0 +1,33 @@
+@font-face {
+    font-family: ghostbusters;
+    src: url(GHOSTBUS.TTF);
+}
+body {
+    background: black;
+    
+}
+header h1 {
+    margin: auto;
+    margin-top: 20px;
+    font-family: ghostbusters;
+    color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+header {
+    background: hsl(242, 19%, 39%) ;
+    height: 80px;
+    padding: 5px;
+    
+}
+.bodytest {
+    content: "";
+    background: #011714;
+    height: 700px;
+    color: rgb(244, 223, 223);
+
+}
+footer {
+    background:hsl(242, 19%, 39%) ;
+    height: 80px;
+}

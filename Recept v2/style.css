@@ -155,7 +155,7 @@ li.navbar {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     transition: all 0.5s ease-in-out 0s;     /* !important?? */
-}
+} 
 .recipeContainer.auto {
     width: 98%;
     height: 90%;
