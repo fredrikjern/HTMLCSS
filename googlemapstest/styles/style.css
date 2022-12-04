@@ -1,0 +1,50 @@
+.ghost {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  list-style: none;
+  margin: 0;
+  width: 10px;
+  border: 1px solid black;
+  transition: 1s ease-in-out;
+  color: red;
+}
+
+.ghost.flyg {
+  position: relative;
+  top: 20% !important;
+  right: 20%;
+  transition: 1s ease-in-out;
+  color: red;
+}
+
+.containerAll {
+  position: relative;
+  height: 500px;
+  width: 600px;
+  border: 3px solid black;
+}
+
+.ghostContainer {
+  position: absolute;
+  height: 480px;
+  width: 590px;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+  border: 3px solid khaki;
+}
+
+.mapContainer {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.btncontainer {
+  position: relative;
+  margin: 5px;
+  height: 30px;
+  background: rgb(34, 0, 255);
+  border: 1px solid green;
+}/*# sourceMappingURL=style.css.map */
