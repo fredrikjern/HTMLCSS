@@ -1,0 +1,21 @@
+body {
+  background: #003929;
+  color: white;
+}
+body h1 {
+  color: rgb(227, 187, 187);
+}
+body nav .container-fluid {
+  background: #011714;
+  color: white;
+}
+body a {
+  color: white;
+}
+body span {
+  color: white;
+}
+
+header {
+  background-color: #003929;
+}/*# sourceMappingURL=sass.css.map */
