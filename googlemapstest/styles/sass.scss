@@ -11,15 +11,9 @@ body {
         width: 10px;
         transition: 1s ease-in-out;
         color: red;
-        opacity: 80%;
+        opacity: 0%;
     }
-    #ghostId.flyg {
-        position: relative;
-        top: 20%;
-        right: 20%;
-        transition: 1s ease-in-out;
-        color: red;
-    }
+
     .containerAll {
         position: relative;
         height: 500px;
